@@ -2,6 +2,11 @@
 @tailwind components;
 @tailwind utilities;
 
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;1,100;1,200;1,300;1,400;1,500&display=swap");
+
+* {
+  scroll-behavior: smooth;
+}
 :root {
   --foreground-rgb: 0, 0, 0;
   --background-start-rgb: 214, 219, 220;
@@ -16,18 +21,152 @@
   }
 }
 
+@font-face {
+  font-family: "ClashDisplay";
+  src: url("/fonts/ClashDisplay-Bold.woff2") format("woff2"),
+    url("/fonts/ClashDisplay-Bold.woff") format("woff"),
+    url("/fonts/ClashDisplay-Bold.ttf") format("truetype");
+  font-weight: 700;
+  font-display: swap;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "ClashDisplay";
+  src: url("/fonts/ClashDisplay-Medium.woff2") format("woff2"),
+    url("/fonts/ClashDisplay-Medium.woff") format("woff"),
+    url("/fonts/ClashDisplay-Medium.ttf") format("truetype");
+  font-weight: 500;
+  font-display: swap;
+  font-style: normal;
+}
+
 body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+  background: #171c28;
+  font-family: "Poppins", sans-serif;
+}
+.text-clip {
+  position: relative;
+  display: inline-block;
+  text-align: center;
+  color: royalblue;
+  overflow: hidden;
+  background: linear-gradient(to right, white, midnightblue 50%, royalblue 50%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-size: 200% 100%;
+  background-position: 100%;
+  transition: background-position 275ms ease;
+  text-decoration: none;
+}
+
+.text-clip:hover {
+  background-position: 0 100%;
 }
 
 @layer utilities {
   .text-balance {
     text-wrap: balance;
   }
+}
+
+/* ƒ.marquee-content {
+  display: flex;
+  animation: scrolling 5s linear infinite;
+} */
+
+.marquee-item {
+  flex: 0 0 0vw;
+  margin: 0 4vw;
+}
+
+.marquee-item .icon {
+  display: block;
+  width: 100%;
+}
+
+@keyframes scrolling {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translatex(-1000px);
+  }
+}
+
+/* MARQUEE VERTICAL */
+.marqueec {
+  position: relative;
+  width: 100vw;
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
+.marquee-vertical .marquee-column {
+  overflow: hidden;
+  white-space: nowrap;
+  height: 100%;
+}
+
+.marquee-vertical .all-image {
+  /* top:-200px; */
+  animation: marquee 8s linear infinite;
+}
+
+@keyframes marquee {
+  from {
+    transform: translateY(-100%);
+  }
+
+  to {
+    transform: translateY(0);
+  }
+}
+
+/* ////// */
+
+@keyframes slide__show__animation {
+  from {
+    left: translateX(0);
+  }
+  to {
+    transform: translateX(-100%);
+  }
+}
+.mask {
+  mask-image: linear-gradient(
+    to right,
+    hsl(0 0% 0% / 0),
+    hsl(0 0% 0% / 1) 10%,
+    hsl(0 0% 0% / 1) 90%,
+    hsl(0 0% 0% / 0)
+  );
+  user-select: none;
+}
+.start__slide__show {
+  animation: slide__show__animation 13s linear infinite;
+}
+
+.image-group {
+  display: grid;
+  place-items: center;
+  width: clamp(10rem, 1rem + 40vmin, 30rem);
+  padding: calc(clamp(10rem, 1rem + 30vmin, 30rem) / 10);
+}
+
+.hidden__top {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.4s ease-in-out;
+}
+
+.visible__top {
+  max-height: 1000px; /* Adjust to your content height */
+  overflow: hidden;
+  transition: max-height 0.5s ease-in-out;
+}
+
+.px-main {
+  @apply xxxxs:px-4 md:px-10 lg:px-[4.2rem] xl:px-[4rem];
 }
