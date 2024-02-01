@@ -12,7 +12,7 @@ const StickySocials = () => {
   return (
     <div className="relative">
       {" "}
-      <div className="bottom-10 left-10 fixed z-[999] flex items-start gap-4 flex-col">
+      <div className="bottom-10 left-4 lg:left-10 fixed z-[999] flex items-start gap-4 flex-col">
         <div>
           <a
             href="https://github.com/Zion98/"
