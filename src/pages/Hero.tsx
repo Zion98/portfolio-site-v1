@@ -74,7 +74,7 @@ const Hero = () => {
         <div className="right__side bg-[#000] h-full w-full"></div>
       </header> */}
 
-      <main className="h-[35rem] flex flex-col lg:flex-row">
+      <main className="h-[15rem] md:h-[20rem] lg:h-[35rem] flex flex-col lg:flex-row">
         <div className="px-main left__side bg-[#000] h-full w-full flex flex-col justify-center items-start relative">
           <header className="top-0 flex bg-[#000] absolute py-4">
             <div className="left__side h-full w-full ">
@@ -89,7 +89,7 @@ const Hero = () => {
           <p className="text-base lg:text-4xl text-white ">
             I craft Ideas into code
           </p>
-          <h2 className="my-4 font-clash text-3xl text-white font-[700]">
+          <h2 className="lg-my-2 lg:my-4 font-clash text-3xl text-white font-[700]">
             Frontend Engineer
           </h2>
 
