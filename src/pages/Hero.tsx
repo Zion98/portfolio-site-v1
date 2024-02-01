@@ -74,7 +74,7 @@ const Hero = () => {
         <div className="right__side bg-[#000] h-full w-full"></div>
       </header> */}
 
-      <main className="h-[30rem] lg:h-[35rem] flex flex-col lg:flex-row">
+      <main className="h-[25rem] lg:h-[35rem] flex flex-col lg:flex-row">
         <div className="px-main left__side bg-[#000] h-full w-full flex flex-col justify-center items-start relative">
           <header className="top-0 flex bg-[#000] absolute py-4">
             <div className="left__side h-full w-full ">
