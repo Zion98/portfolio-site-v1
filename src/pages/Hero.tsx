@@ -95,7 +95,7 @@ const Hero = () => {
 
           <div className="flex items-start gap-2">
             <a
-              href="tel:+2348142707088"
+              href="mailto:adeyemioluwasegun98@gmail.com"
               className="py-4 px-4 flex items-center mt-3 gap-x-4 text-xs text-white border-[.1px] border-white hover:bg-white hover:text-black"
             >
               Get in touch
