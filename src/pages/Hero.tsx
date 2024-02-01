@@ -86,7 +86,9 @@ const Hero = () => {
             <div className="right__side bg-[#000] h-full w-full"></div>
           </header>
 
-          <p className="text-4xl text-white ">I craft Ideas into code</p>
+          <p className="text-base lg:text-4xl text-white ">
+            I craft Ideas into code
+          </p>
           <h2 className="my-4 font-clash text-3xl text-white font-[700]">
             Frontend Engineer
           </h2>
