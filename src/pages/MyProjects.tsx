@@ -12,6 +12,27 @@ const MyProjects = () => {
 
   const myProjects = [
     {
+      title: "PayBox360",
+      image: "/images/paybox.png",
+      description:
+        "An all in one financial solutions platform with services ranging from Sales operations, HR management, Expense tracking,Inventory management etc.",
+      link: "https://www.paybox360.com/",
+    },
+    {
+      title: "WinWise",
+      image: "/images/winwise.png",
+      description:
+        "An interactive gaming software platform for placing bets across different arrays of Game options.",
+      link: "https://www.wisewinn.com/",
+    },
+    {
+      title: "Cashwise",
+      image: "/images/cashwise.png",
+      description:
+        "A series of connected informational landing pages for financial related services centered around iternational cash transfer in over 2 countries.",
+      link: "https://www.cashwise.finance/",
+    },
+    {
       title: "Profiles",
       image: "/images/profiles.png",
       description:
@@ -22,29 +43,8 @@ const MyProjects = () => {
       title: "Education Loans App (P2vest)",
       image: "/images/educationp2vest.png",
       description:
-        "A digital platform that connects businesses and individuals seeking software-related services with skilled professionals in the software development industry.",
+        "A web application targeted towards providing financial loan options for interested students.",
       link: "https://education.p2vest.com/",
-    },
-    {
-      title: "WinWise",
-      image: "/images/winwise.png",
-      description:
-        "A digital platform that connects businesses and individuals seeking software-related services with skilled professionals in the software development industry.",
-      link: "https://www.wisewinn.com/",
-    },
-    {
-      title: "PayBox360",
-      image: "/images/paybox.png",
-      description:
-        "A digital platform that connects businesses and individuals seeking software-related services with skilled professionals in the software development industry.",
-      link: "https://www.paybox360.com/",
-    },
-    {
-      title: "Cashwise",
-      image: "/images/cashwise.png",
-      description:
-        "A digital platform that connects businesses and individuals seeking software-related services with skilled professionals in the software development industry.",
-      link: "https://www.cashwise.finance/",
     },
   ];
 
@@ -88,7 +88,7 @@ const MyProjects = () => {
                   {project.title}
                 </h2>
 
-                <p className="leading-2 px-6 text-xs text-white">
+                <p className="leading-[1.6]  px-6 text-xs text-white">
                   {project.description}
                 </p>
               </div>
