@@ -89,9 +89,17 @@ const Hero = () => {
           <p className="text-base lg:text-4xl text-white ">
             I craft Ideas into code
           </p>
-          <h2 className="lg-my-2 lg:my-4 font-clash text-3xl text-white font-[700]">
+          <h2 className="my-3 lg:my-4 font-clash text-3xl text-white font-[700] ">
             Frontend Engineer
           </h2>
+
+          <p className="text-white text-sm text-justify lg:max-w-[80%] leading-[1.8] ">
+            Welcome to my corner of the web! I'm Segun, a seasoned frontend
+            developer with a passion for crafting seamless digital experiences.
+            Over the past three years, I've had the privilege of weaving my
+            skills and expertise across a diverse range of industries, including
+            Education, Finance, and Gaming.
+          </p>
 
           <div className="flex items-start gap-2">
             <a
