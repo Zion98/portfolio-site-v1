@@ -74,11 +74,11 @@ const Hero = () => {
         <div className="right__side bg-[#000] h-full w-full"></div>
       </header> */}
 
-      <main className="h-[25rem] lg:h-[35rem] flex flex-col lg:flex-row">
-        <div className="px-main left__side bg-[#000] h-full w-full flex flex-col justify-center items-start relative">
-          <header className="top-0 flex bg-[#000] absolute py-4">
-            <div className="left__side h-full w-full ">
-              <h2 className="whitespace-nowrap font-clash text-sm text-white font-[700]">
+      <main className="h-[30rem] lg:h-[35rem] flex flex-col lg:flex-row w-full">
+        <div className="px-main left__side bg-[#000] h-full flex flex-col justify-center items-start relative">
+          <header className="top-4 flex bg-[#000] absolute py-4 ">
+            <div className="left__side h-full w-full">
+              <h2 className="whitespace-nowrap font-clash text-sm text-white font-[700] ">
                 Segun Adeyemi
               </h2>
             </div>
@@ -86,7 +86,7 @@ const Hero = () => {
             <div className="right__side bg-[#000] h-full w-full"></div>
           </header>
 
-          <p className="text-base lg:text-4xl text-white ">
+          <p className="mt-4 text-base lg:text-4xl text-white ">
             I craft Ideas into code
           </p>
           <h2 className="my-3 lg:my-4 font-clash text-3xl text-white font-[700] ">
